@@ -9,7 +9,7 @@ import com.ludo.ecommerce.entity.ProductCategory;
 
 // collectionResourceRel - name of json entry; reference path /product-category
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 @RepositoryRestResource(collectionResourceRel = "productCategory", path="product-category")
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Long>{
 
